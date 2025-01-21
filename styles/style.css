@@ -39,13 +39,11 @@ body {
     list-style: none;
     display: flex;
     gap: 30px;
-   
   }
   
   .nav-links li a {
     text-decoration: none;
     font-weight: bold;
-    
   }
   
   .Home{
@@ -80,10 +78,7 @@ body {
     background: #cc8400;
   }
 
-  
-  
 /* Hero Section */
-
 .hero {
     display: flex;
     align-items: center;
@@ -132,6 +127,7 @@ body {
     display: inline;
     margin-left: 80px;
   }
+
 main{
     background: url("../images/bg.png"),linear-gradient(0.00deg, rgba(240, 178, 122, 0.3),rgba(255, 255, 255, 0.3) 100%) ;
 }
