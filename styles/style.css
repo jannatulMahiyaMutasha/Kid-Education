@@ -16,7 +16,7 @@ body {
     background-color: white;
   }
 
-  /* nabar section*/
+  /* navbar section*/
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -218,23 +218,33 @@ padding: 0px 35px;
     margin-left: 50px;
     gap:10px;
 }
-.carousel2{
+.carousel{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 40px;
     gap:10px;
 }
 .arrow-img{
-    margin-top: 60px;
+    margin-top: 100px;
     width: 40px;
     height: 40px;
    
 }
 .arrow-back-img{
-    margin-top: 40px;
+    margin-top: 100px;
     width: 40px;
     height: 40px;
 }
+
+/*stories*/
+.story-heading{
+margin-top: 60px;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
