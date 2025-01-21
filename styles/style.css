@@ -3,18 +3,23 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
   }
   
   header {
-    background: #f9f9f9;
     padding: 15px 30px;
-    margin: 10px 36px;
+    margin: 10px 50px;
+    justify-content: space-evenly;
   }
-  
+
+  /* nabar section*/
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 90px;
   }
   
   .logo {
@@ -26,34 +31,27 @@ body {
   .logo img {
     width: 40px;
   }
-  
+  .school{
+    font-weight: bold;
+    font-size: 18px;
+  }
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
    
   }
   
   .nav-links li a {
     text-decoration: none;
     font-weight: bold;
+    
   }
   
-  .nav-links .btn-contact {
-    background: #ffa500;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  
-  .nav-links .btn-contact:hover {
-    background: #cc8400;
-  }
-
   .Home{
     color: orange;
-    padding-left: 400px;
+    padding-left: 180px;
+   
   }
   .About{
     color: #6495ED;
@@ -63,18 +61,45 @@ body {
   }
   .Admission{
     color: blueviolet;
-    padding-right: 400px;
+    padding-right: 280px;
   }
 
+   .btn-contact {
+    background: #ffa500;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 120px;
+    border:none;
+    font-weight: bold;
+    font-size:16px;
+  }
+  
+   .btn-contact:hover {
+    background: #cc8400;
+  }
+
+  
+  
 /* Hero Section */
+
 .hero {
     display: flex;
     align-items: center;
-    padding: 50px 0;
-    background: #f9f9f9;
+   /* padding: 50px 0; */
+   /* background: #f9f9f9;*/
+   grid-template-columns: repeat(2,1fr);
 }
-
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:22px 100px 120px 100px;
+    gap:60px
+}
 .hero-text h1 {
+    margin-top: 140px;
     font-size: 2.5em;
     color: #333;
 }
@@ -86,19 +111,27 @@ body {
     color:#6495ED !important;
 }
 .hero-text p {
-    margin-top: 15px;
+   margin-top: 6px;
+   font-size: 20px;
     color: #666;
 }
 
 .hero-text .btn {
     display: inline-block;
-    background: orange;
+    background: black;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
+.hero-image{
+    width:300px;
+    height: 500px;
+    position: relative;
+    display: inline;
+    margin-left: 80px;
+  }
 .main{
     background-image: url("../images/bg.png") !important;
 }
