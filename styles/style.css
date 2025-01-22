@@ -76,7 +76,9 @@ body {
     font-weight: bold;
     font-size:16px;
   }
-  
+  hr{
+    display: none;
+  }
    .btn-contact:hover {
     background: #cc8400;
   }
@@ -104,14 +106,14 @@ body {
     justify-content: space-between;
     width: 100%;
   }
-div img{
-  margin-left: -100px;
-}
+  div img{
+    margin-left: -100px;
+  }
   /* Show hamburger menu */
   .hamburger-menu {
     display: block;
     position: relative;
-    margin-right: -40px;
+    /* margin-right: -40px; */
   }
 
   /* Hide navigation links */
@@ -139,6 +141,14 @@ div img{
   /* Ensure Contact button also hides initially */
   .btn-contact {
     display: none; /* Hide Contact button */
+  }
+  marquee{
+    display: none;
+  }
+  hr {
+    border: 2px solid orange; /* Change to dashed for smaller screens */
+    width: 80%; /* Adjust width for better alignment */
+    margin: 10px auto; /* Center the HR */
   }
 }
 
@@ -556,10 +566,20 @@ font-size:15px;
       padding: 0.8rem; /* Reduce padding for smaller screens */
     }
   .story-section img{
-    width:100%;
+    display: flex;
+   
     overflow: hidden;
     object-fit: cover;
     position: relative;
+    align-items: center;
+    width: 80%; /* Ensure the image does not overflow */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between the image and text/button */
+    display: block; /
+    
+  }
+  .story-section img .second {
+margin-right: 60px;
   }
     .story-heading {
       font-size: 1.5rem; /* Adjust heading size */
@@ -688,20 +708,23 @@ font-size:15px;
     margin: 0 auto;
     display: block; /* Center the logo */
     align-items: left;
+    margin-left: -32px;
   }
 
   .footer p {
     margin: 1rem auto;
     font-size: 0.85rem; /* Adjust text size for small screens */
     line-height: 1.5;
-    margin-left: -150px;
+    margin-left: -32px;
     align-items: left;
   }
-
+  .footer-link h4{
+    margin-top: 20px;
+  }
   .footer-links, .footer-social {
     display: flex;
     text-align: left; /* Center-align links */
-    margin-left: -150px;
+    margin-left: -40px;
   }
 
   .footer-links ul, 
