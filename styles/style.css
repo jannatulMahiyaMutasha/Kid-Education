@@ -91,52 +91,54 @@ body {
 /* Responsive Design */
 @media (max-width: 576px) {
   .navbar {
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .btn-contact {
-    display: none; /* Hide the Contact button for smaller screens */
+  /* Hide the span (school) tag */
+  .navbar .logo .school {
+    display: none;
   }
 
-  .hamburger-menu {
-    display: block; /* Display the hamburger menu */
-    z-index: 10;
-  }
-
-  .nav-menu {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background-color: #f4f4f4;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  /* Show logo and hamburger menu only */
+  .navbar .logo {
+    justify-content: space-between;
     width: 100%;
-    display: none; /* Hidden by default */
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-    z-index: 9;
   }
-
-  .nav-menu .school {
-    margin-bottom: 1rem;
-    text-align: center;
+div img{
+  margin-left: -100px;
+}
+  /* Show hamburger menu */
+  .hamburger-menu {
     display: block;
-    font-size: 1.2rem;
+    position: relative;
+    margin-right: -40px;
   }
 
+  /* Hide navigation links */
   .nav-links {
+    display: none; /* Initially hide */
+  }
+
+  /* Optional: If you want the menu to toggle later via JavaScript */
+  .nav-links.active {
+    display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    position: absolute;
+    top: 100%; /* Position it below the navbar */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .nav-links li a {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
   }
 
-  .nav-menu.show {
-    display: flex; /* Show the menu when toggled */
+  /* Ensure Contact button also hides initially */
+  .btn-contact {
+    display: none; /* Hide Contact button */
   }
 }
 
@@ -202,22 +204,33 @@ main{
   }
 
   .hero-image {
-    margin-bottom: 1.5rem; /* Add spacing between image and text */
+    width: 20%;
+    height: 60%;
+    margin-bottom: 1.5rem;
+    margin-left: -120px;
+    margin-right: 100px; /* Add spacing between image and text */
   }
 
   .hero-text h1 {
+    margin-top: 40px;
     font-size: 1.5rem;
     line-height: 1.2;
+    align-items: center;
+    margin-left: -300px ;
   }
 
   .hero-text p {
     font-size: 0.9rem;
     line-height: 1.5;
+    align-items: center;
+    margin-left: -300px ;
   }
 
   .hero-text .btn {
     font-size: 0.9rem;
     padding: 0.7rem 1.2rem;
+    align-items: center;
+    margin-left: -300px ;
   }
 }
 /* Features Section */
@@ -339,7 +352,11 @@ padding: 0px 35px;
 }
 
 @media (max-width: 576px) {
+  .features{
+    margin-top: 60px;
+  }
   .feature-cards {
+    margin-top: 60px;
     flex-direction: column; /* Stack cards vertically */
     gap: 2rem; /* Add space between stacked cards */
     align-items: center; /* Center-align the cards */
@@ -664,6 +681,7 @@ font-size:15px;
 
   .footer-logo {
     align-items: left;
+    margin-left: -150px;
   }
 
   .footer-img {
@@ -676,10 +694,14 @@ font-size:15px;
     margin: 1rem auto;
     font-size: 0.85rem; /* Adjust text size for small screens */
     line-height: 1.5;
+    margin-left: -150px;
+    align-items: left;
   }
 
   .footer-links, .footer-social {
-    text-align: center; /* Center-align links */
+    display: flex;
+    text-align: left; /* Center-align links */
+    margin-left: -150px;
   }
 
   .footer-links ul, 
