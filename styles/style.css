@@ -228,32 +228,8 @@ padding: 0px 35px;
     margin-right: 40px;
     gap:10px;
 }
-/*
-.arrow-img{
-    width: 40px;
-    height: 40px;
-   
-}
-button .arrow-img:hover{
-  color:orange !important;
 
-}
- button .arrow-back-img{
-   background-color: hidden;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-}
-.arrow-back-img:hover{
-  color: #cc8400 !important;
-}
-  */
-
-button .fa-chevron-left,
-button .fa-chevron-right{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ .carousel button{
   width: 50px; 
   height: 50px; 
   background-color: orange;
@@ -262,18 +238,15 @@ button .fa-chevron-right{
   border-radius: 50%; 
   cursor: pointer;
   font-size: 18px; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: none;
+  transition: transform 0.3s ease;
+  border:1px solid orange;
 }
-button .fa-chevron-left :hover,
-button .fa-chevron-right :hover{
-  background-color: orange !important;
-  color: #fff !important;
+.carousel button:hover{
+  background-color: white;
+  color:black;
+  border:1px solid orange;
 }
-.carousel button{
-  border-radius: 100% ;
-  border: none;
-}
+
 .carousel {
   justify-content: center;
   margin-bottom: 20px;
